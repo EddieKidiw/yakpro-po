@@ -1,6 +1,22 @@
 #!/usr/bin/env php
-<?php 
+<?php
+//========================================================================
+// Author:  Pascal KISSIAN
+// Resume:  http://pascal.kissian.net
+//
+// Copyright (c) 2015-2020 Pascal KISSIAN
+//
+// Published under the MIT License
+//          Consider it as a proof of concept!
+//          No warranty of any kind.
+//          Use and abuse at your own risks.
+//========================================================================
+if (isset($_SERVER['SERVER_SOFTWARE']) && $_SERVER['SERVER_SOFTWARE'] != '') {
+    echo "<h1>Comand Line Interface Only!</h1>";
+    die;
+}
 include 'version.php';
+include 'check_version.php';
 include 'vendor/autoload.php';
 use PhpParser\Error;
 use PhpParser\ParserFactory;
