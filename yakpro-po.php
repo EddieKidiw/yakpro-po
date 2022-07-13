@@ -16,7 +16,7 @@ if (isset($_SERVER['SERVER_SOFTWARE']) && $_SERVER['SERVER_SOFTWARE'] != '') {
     die;
 }
 include 'version.php';
-include 'check_version.php';
+include 'include/check_version.php';
 include 'vendor/autoload.php';
 use PhpParser\Error;
 use PhpParser\ParserFactory;
