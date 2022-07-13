@@ -1,4 +1,5 @@
 <?php
+namespace Eddiekidiw\YakproPo\classes\parser_extensions;
 //========================================================================
 // Author:  Pascal KISSIAN
 // Resume:  http://pascal.kissian.net
@@ -11,7 +12,12 @@
 //          Use and abuse at your own risks.
 //========================================================================
 
-class myPrettyprinter extends PhpParser\PrettyPrinter\Standard
+use PhpParser;
+use PhpParser\Node;
+use PhpParser\Node\Scalar;
+use PhpParser\PrettyPrinter\Standard;
+
+class my_pretty_printer extends Standard
 {
     private function obfuscate_string($str)
     {
