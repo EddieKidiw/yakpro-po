@@ -7,11 +7,12 @@
 Original repositori [pk-fr/yakpro-po](https://github.com/pk-fr/yakpro-po)
 
 ## Setup:
-      git clone https://github.com/EddieKidiw/yakpro-po.git
-      cd yakpro-po
-      ./yakpro-po.php --help 
-      ./yakpro-po.php test.php 
+    git clone https://github.com/EddieKidiw/yakpro-po.git
+    cd yakpro-po
+    composer install
+    ./yakpro-po.php --help 
+    ./yakpro-po.php test.php 
 
 
 ## Composer:
-      composer require eddiekidiw/yakpro-po
+    composer require eddiekidiw/yakpro-po
