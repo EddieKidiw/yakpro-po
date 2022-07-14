@@ -14,4 +14,4 @@ Original repositori [pk-fr/yakpro-po](https://github.com/pk-fr/yakpro-po)
 
 
 ## Composer:
-      compose require eddiekidiw/yakpro-po
+      composer require eddiekidiw/yakpro-po
