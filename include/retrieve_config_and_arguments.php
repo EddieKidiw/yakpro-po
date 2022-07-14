@@ -69,8 +69,8 @@ class retrieve_config_and_arguments
             $x = $x[0];
             if (file_exists("{$this->yakpro_po_dirname}/locale/{$x}/README.md")) {
                 $help = file_get_contents("{$this->yakpro_po_dirname}/locale/{$x}/README.md");
-            } elseif (file_exists("{$this->yakpro_po_dirname}/README.md")) {
-                $help = file_get_contents("{$this->yakpro_po_dirname}/README.md");
+            } elseif (file_exists("{$this->yakpro_po_dirname}/README_pk-fr.md")) {
+                $help = file_get_contents("{$this->yakpro_po_dirname}/README_pk-fr.md");
             } else {
                 $help = "Help File not found!";
             }
