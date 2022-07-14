@@ -28,10 +28,7 @@ use Eddiekidiw\YakproPo\classes\Scrambler;
 use Eddiekidiw\YakproPo\retrieve_config_and_arguments;
 use Eddiekidiw\YakproPo\classes\parser_extensions\my_node_visitor;
 use Eddiekidiw\YakproPo\classes\parser_extensions\my_pretty_printer;
-if (isset($_SERVER['SERVER_SOFTWARE']) && $_SERVER['SERVER_SOFTWARE'] != '') {
-    echo "<h1>Comand Line Interface Only!</h1>";
-    die;
-}
+
 $Config = new retrieve_config_and_arguments($argv, $yakpro_po_version);
 if ($Config->clean_mode && file_exists("{$Config->target_directory}/yakpro-po/.yakpro-po-directory")) {
     if (!$Config->conf->silent) {
